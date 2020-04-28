@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+.card {
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+    background-color: #fff;
+    border-radius: 4px;
+}
+.card_body {
+    width: 12rem;
+}
+.card_title {
+    color: rgba(0, 0, 0, 0.54);
+    font-weight: 600;
+    padding-bottom: 12px;
+}
+.card_number {
+    font-size: x-large;
+    font-weight: 500;
+}
+.card_date {
+    font-size: initial;
+    color: rgba(0, 0, 0, 0.54);
+}
+.card_description {
+    font-size: small;
+}
+.confirmed {
+    border-bottom: 10px solid #ff5d6c;
+}
+.recovered {
+    border-bottom: 10px solid #8cba51;
+}
+.deaths {
+    border-bottom: 10px solid #35495e;
+}
