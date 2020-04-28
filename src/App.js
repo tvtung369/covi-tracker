@@ -18,6 +18,8 @@ class App extends React.Component {
             <div className={styles.container}>
                 {/* this makes sure that you don't have any interference another other css file across your whole file system */}
                 <Cards data={data}/>
+                <CountryPicker/>
+                <Chart/>
             </div>
         );
     }
