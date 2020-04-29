@@ -18,7 +18,7 @@ class App extends React.Component {
         // fetch the data
         const fetchedData = await fetchData(country);
         // set the sate
-        this.setState({data: fetchedData});
+        this.setState({data: fetchedData, country: country});
     }
 
     render() {
@@ -28,7 +28,7 @@ class App extends React.Component {
                 {/* this makes sure that you don't have any interference another other css file across your whole file system */}
                 <Cards data={data}/>
                 <CountryPicker handleCountryChange={this.handleCountryChange}/>
-                <Chart/>
+                <Chart data={data} country={country} />
             </div>
         );
     }
